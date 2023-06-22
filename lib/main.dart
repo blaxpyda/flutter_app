@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import "body.dart";
 
 void main() {
   runApp(CSCRecessTerm());
@@ -15,9 +16,7 @@ class CSCRecessTerm extends StatelessWidget {
             style: TextStyle(color: Colors.red),
           ),
         ),
-        body: Center(
-          child: CircularProgressIndicator(),
-        ),
+        body: body(),
       ),
     );
   }
