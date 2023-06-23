@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
 
-class body extends StatelessWidget {
+class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("Hello World"),
+    return ListView.builder(
+      itemCount: 50,
+      itemBuilder: (context, rowNumber) {
+        return Column(
+          children: [
+            Image.asset('assets/Logo.jpg'),
+            ListTile(
+              title: Text('Row $rowNumber'),
+            ),
+            Divider(), // Optional divider between list items
+          ],
+        );
+      },
     );
   }
 }
