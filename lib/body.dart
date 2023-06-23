@@ -9,8 +9,12 @@ class Body extends StatelessWidget {
         return Column(
           children: [
             Image.asset('assets/Logo.jpg'),
+            Divider(color: Colors.black),
             ListTile(
-              title: Text('Row $rowNumber'),
+              title: Text(
+                'Welcome to being strong',
+                style: TextStyle(fontSize: 16),
+              ),
             ),
             Divider(), // Optional divider between list items
           ],
