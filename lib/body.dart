@@ -6,18 +6,22 @@ class Body extends StatelessWidget {
     return ListView.builder(
       itemCount: 50,
       itemBuilder: (context, rowNumber) {
-        return Column(
-          children: [
-            Image.asset('assets/Logo.jpg'),
-            Divider(color: Colors.black),
-            ListTile(
-              title: Text(
-                'Welcome to being strong',
-                style: TextStyle(fontSize: 16),
+        return Container(
+          padding: EdgeInsets.all(15.0),
+          child: Column(
+            children: [
+              Image.asset('assets/Logo.jpg'),
+              Divider(
+                color: Colors.red,
               ),
-            ),
-            Divider(), // Optional divider between list items
-          ],
+              Text(
+                "Welcome to Cocis",
+                style: TextStyle(
+                  color: Colors.green,
+                ),
+              ),
+            ],
+          ),
         );
       },
     );
